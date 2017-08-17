@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "truffle": "^3.4.9",
+    "web3": "^1.0.0-beta.18",
     "zeppelin-solidity": "git://github.com/OpenZeppelin/zeppelin-solidity.git#master"
   }
 }

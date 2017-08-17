@@ -1,4 +1,6 @@
 var BlockchainLabsCrowdsale = artifacts.require("./BlockchainLabsCrowdsale.sol");
+const Web3 = require('web3');
+const web3_10 = new Web3('http://localhost:8545');
 
 module.exports = function(deployer, network, accounts) {
   return liveDeploy(deployer, accounts);
@@ -22,7 +24,10 @@ async function liveDeploy(deployer, accounts) {
   const RATE = 1;
   const startTime = latestTime() + duration.minutes(1);
   const endTime =  startTime + duration.weeks(1);
-  console.log([startTime, endTime, RATE, accounts[0]]);
+  const args = [startTime, endTime, RATE, accounts[0]];
+  const encodedParams = web3_10.eth.abi.encodeParameters(['uint256', 'uint256', 'uint256', 'address'], args);
+  console.log('args:', args);
+  console.log('encoded:', encodedParams.substr(2));
   // uint256 _startTime, uint256 _endTime, uint256 _rate, address _wallet) 
   
   return deployer.deploy(BlockchainLabsCrowdsale, startTime, endTime, RATE, accounts[0]).then( async () => {

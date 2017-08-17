@@ -28,6 +28,7 @@ contract BlockchainLabsCrowdsale is Crowdsale, Ownable {
     }
 
     function changeWhitelistAddress(address _address, bool state) onlyOwner {
+        require(_address != 0x0);
         addresses[_address] = state;
     }
 
