@@ -16,8 +16,8 @@
 
 ### Tools Used:
 
-https://github.com/OpenZeppelin/zeppelin-solidity
-https://github.com/oraclesorg/oracles-combine-solidity/
-https://kovan.etherscan.io/
-https://metamask.io/
-https://gitter.im/kovan-testnet/faucet - ask for free Kether to deploy to Kovan network
+https://github.com/OpenZeppelin/zeppelin-solidity<br>
+https://github.com/oraclesorg/oracles-combine-solidity/<br>
+https://kovan.etherscan.io/<br>
+https://metamask.io/<br>
+https://gitter.im/kovan-testnet/faucet - ask for free Kether to deploy to Kovan network<br>
