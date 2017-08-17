@@ -13,7 +13,7 @@ contract BlockchainLabsCrowdsale is Crowdsale, Ownable {
         Crowdsale(_startTime, _endTime, _rate, _wallet)
     {
     }
-
+    // Can only call once. If not needed, remove `require(!whitelistInitialized)`
     function whitelistAddresses(address[] _addresses) onlyOwner {
         require(!whitelistInitialized);
         for (uint256 i = 0; i < _addresses.length; i++) {
@@ -21,7 +21,7 @@ contract BlockchainLabsCrowdsale is Crowdsale, Ownable {
         }
         whitelistInitialized = true;
     }
-    
+
     function buyTokens(address beneficiary) payable {
         require(addresses[beneficiary] == true);
         super.buyTokens(beneficiary);
