@@ -21,3 +21,4 @@ https://github.com/oraclesorg/oracles-combine-solidity/<br>
 https://kovan.etherscan.io/<br>
 https://metamask.io/<br>
 https://gitter.im/kovan-testnet/faucet - ask for free Kether to deploy to Kovan network<br>
+https://parity.io/<br>
