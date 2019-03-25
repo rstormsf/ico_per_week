@@ -3,7 +3,7 @@
 Stop using `web3.eth.getBalance` if you need to get balance for more than 5 addresses.  
 Use the power of solidity to get any necessary data from ethereum blockchain.  
 
-Checkout this video tutorial:  
+Checkout [this](https://youtu.be/pL1dZhodxvI) video tutorial: https://youtu.be/pL1dZhodxvI  
 []()
 
 Example:   
