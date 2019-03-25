@@ -1,4 +1,4 @@
-## How to optimize
+## How to optimize ethereum infura queries
 
 Stop using `web3.eth.getBalance` 
 Use the power of solidity to get any necessary data from ethereum blockchain.
