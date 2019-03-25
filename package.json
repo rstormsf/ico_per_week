@@ -1,0 +1,14 @@
+{
+  "name": "tutorial_batch",
+  "version": "1.0.0",
+  "description": "",
+  "main": "readbalances.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ethers": "^4.0.27"
+  }
+}
