@@ -1,15 +1,15 @@
 ## How to optimize ethereum infura queries
 
-Stop using `web3.eth.getBalance` 
-Use the power of solidity to get any necessary data from ethereum blockchain.
+Stop using `web3.eth.getBalance` if you need to get balance for more than 5 addresses.  
+Use the power of solidity to get any necessary data from ethereum blockchain.  
 
-Checkout this video tutorial:
+Checkout this video tutorial:  
 []()
 
-Example: 
-Query eth balances and erc20 token balances in batches.
+Example:   
+Query eth balances and erc20 token balances in batches.  
 
-We need solidity contract:
+We need solidity contract:  
 ```solidity
 pragma solidity >=0.4.22 <0.6.0;
 interface ERC20 {
